@@ -1,44 +1,80 @@
-
-a {
-    color: #414749;
-}
-.container a {
-      font-size: 15px;
-}
-.navbar-nav li a:hover {
-  color: #eec273;
-  background-color: transparent;
-}
-a:hover {
-  text-decoration: none;
-}
+/*Global Styles*/
 h1,
 h2,
 p {
   color: #414749;
 }
+h2 {
+  margin-top: 5px;
+}
+/* Navigation */
+a {
+  color: #0c4252;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.portfolio a:hover {
+  color: #eec273;
+}
+
+.container a {
+  font-size: 15px;
+  color: #fff;
+}
+
+.navbar-nav li a:hover {
+  background-color: transparent;
+  color: #0c4252;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .navbar-toggle {
   background-color:  transparent;
-  border: 2px solid #eec273;
+  border: 2px solid #fff;
 }
+
 span.icon-bar {
-  background-color: #eec273;
+  background-color: #fff;
 }
-.navbar-toggle .icon-bar+.icon-bar{
-  background-color: #eec273;
+
+.navbar-toggle .icon-bar+.icon-bar {
+  background-color: #fff;
+}
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header,
+.container>.navbar-collapse,
+.container>.navbar-header {
+  background-color: rgba(152,152,152,1);
+   opacity: 0.6;
+}
+.icon-bar a:hover {
+  background-color: #e7f0f3;
+}
+/* About Me */
+img.portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
 }
 
 .aboutMe {
-  height: 300px;
+  height: 300%;
   background: url(../img/chevron.jpg);
   background-repeat: round;
   background-size: cover;
 }
 
 .page-header {
-  margin-bottom: 2px;
+margin-top: 1px;
 }
-
 
 /* Work Section */
 .work {
@@ -46,64 +82,104 @@ span.icon-bar {
 }
 
 .portfolio {
+  height: 500%;
   background-color: #e5f3f7;
+  background: -webkit-linear-gradient(#f7fbfc, #e5f3f7); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#f7fbfc, #e5f3f7); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#f7fbfc, #e5f3f7); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#f7fbfc, #e5f3f7); /* Standard syntax */
 }
-
-
-/* Sticky footer styles
--------------------------------------------------- */
-
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+.portWork {
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
+/*footer styles */
 
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
-}
-
-/* Set the fixed height of the footer here */
 .footer {
-  height: 400px;
+  height: 20%;
   background: url(../img/chevron.jpg);
   background-repeat: round;
   background-size: cover;
   border-top: 1px solid #eee;
 }
 
-/* Not required for template or sticky footer method. */
-
+/* Contact Form */
+.emailMe a:hover {
+  color: #eec273;
+}
 .container {
   width: 100%;
   padding: 0 15px;
 }
 
 textarea.form-control {
-  height: 150px;
+  height: 30%;
+  width: 90%;
 }
 label {
   color: #5f8087;
+  padding-left: 20px;
 }
 .form-control {
-  width: 80%;
+  width: 90%;
   background-color: #e5f3f7;
   border-color: #eec273;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.followMe {
+  margin-top: 10px;
+}
+
 .btn {
   background-color: #e5f3f7;
   border-color: #eec273;
   color: #eec273;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Media Queries */
 @media (min-width: 768px) {
-  .container {
-    width: 250px;
+  .aboutMe {
+    height: 300px;
+    background: url(../img/chevron.jpg);
+    background-repeat: round;
+    background-size: cover;
   }
+  .container a {
+    font-size: 15px;
+    color: #fff;
+  }
+  img.portrait {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+  }
+  .container {
+    width: 260px;
+  }
+  .portWork {
+    margin: 100px 100px;
+  }
+  .footer {
+    height: 400px;
+    background: url(../img/chevron.jpg);
+    background-repeat: round;
+    background-size: cover;
+    border-top: 1px solid #eee;
+  }
+  textarea.form-control {
+    height: 150px;
+  }
+  .form-control {
+    width: 80%;
+    background-color: #e5f3f7;
+    border-color: #eec273;
+  }
+
 }
