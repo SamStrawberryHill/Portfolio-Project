@@ -1,0 +1,109 @@
+
+a {
+    color: #414749;
+}
+.container a {
+      font-size: 15px;
+}
+.navbar-nav li a:hover {
+  color: #eec273;
+  background-color: transparent;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+p {
+  color: #414749;
+}
+.navbar-toggle {
+  background-color:  transparent;
+  border: 2px solid #eec273;
+}
+span.icon-bar {
+  background-color: #eec273;
+}
+.navbar-toggle .icon-bar+.icon-bar{
+  background-color: #eec273;
+}
+
+.aboutMe {
+  height: 300px;
+  background: url(../img/chevron.jpg);
+  background-repeat: round;
+  background-size: cover;
+}
+
+.page-header {
+  margin-bottom: 2px;
+}
+
+
+/* Work Section */
+.work {
+  margin-top: 2.5px;
+}
+
+.portfolio {
+  background-color: #e5f3f7;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+.footer {
+  height: 400px;
+  background: url(../img/chevron.jpg);
+  background-repeat: round;
+  background-size: cover;
+  border-top: 1px solid #eee;
+}
+
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+textarea.form-control {
+  height: 150px;
+}
+label {
+  color: #5f8087;
+}
+.form-control {
+  width: 80%;
+  background-color: #e5f3f7;
+  border-color: #eec273;
+}
+.btn {
+  background-color: #e5f3f7;
+  border-color: #eec273;
+  color: #eec273;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .container {
+    width: 250px;
+  }
+}
