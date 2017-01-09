@@ -106,6 +106,11 @@ img.portrait {
   padding-bottom: 0px;
   border-bottom: 0px solid transparent;
 }
+/* Alchemy Symbols */
+.alchemy {
+  height: 30px;
+  width: 30px;
+}
 
 /* Work Section */
 .portfolio {
@@ -138,14 +143,14 @@ img.portrait {
 }
 
 .kitty5 {
-  height: 348.8px;
-  width: 404.8px;
+  height: 404.8px;
+  width: 348.8px;
   margin-top: 10px;
 }
 
 .kitty6 {
-  height: 220.6px;
-  width: 272px;
+  height: 272px;
+  width: 220.6px;
   margin-top: 80px;
 }
 /*footer styles */
@@ -242,6 +247,10 @@ label {
   p {
   text-align: left;
   }
+  .alchemy {
+    height: 50px;
+    width: 50px;
+  }
 
   .footer ul {
   text-align: left;
@@ -296,6 +305,10 @@ label {
 }
 
 @media (min-width: 992px) {
+  .alchemy {
+    height: 60px;
+    width: 60px;
+  }
   .kitty {
     width: 350px;
     height: 212px;
@@ -330,6 +343,10 @@ label {
   width: 100%;
   height: 100%;
 }
+.alchemy {
+  height: 80px;
+  width: 80px;
+}
 .sectionK {
   margin-top: 60px;
   width: 400px;
@@ -340,33 +357,6 @@ label {
 .sectionF {
   width: 200px;
 }
-/*.kitty1 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.kitty2 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-.kitty3 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.kitty4 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.kitty5 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.kitty6 {
-  margin-left: 10px;
-  margin-right: 10px;
-}*/
 
 }
