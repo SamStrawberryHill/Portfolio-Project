@@ -1,42 +1,67 @@
 /*Global Styles*/
-h1,
-h2,
-p {
-  color: #414749;
+body {
+  background: url('../img/edit2.jpg');
+    background-attachment: scroll;
 }
+h1,
+p {
+  color: #7D26CD;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+}
+
 h2 {
+  color:	#3effa7;
   margin-top: 5px;
+}
+h2 small {
+  color: #f0d6cd;
+}
+.samantha {
+    /*position: absolute;
+    top: 600px;
+    left: 500px;*/
 }
 /* Navigation */
 a {
-  color: #0c4252;
+  color: #e6bbad;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
 }
-.portfolio a:hover {
-  color: #eec273;
+
+.container-fluid .portfolio {
+  overflow: visible;
+  width: 100%;
+  position: relative;
 }
 
-.container a {
-  font-size: 15px;
-  color: #fff;
+.navbar-nav li a {
+  color: #ff3e96;
+  font-size: 30px;
+  padding-bottom: 15px;
+
 }
 
 .navbar-nav li a:hover {
   background-color: transparent;
-  color: #0c4252;
-}
-
-a:hover {
-  text-decoration: none;
+  color: #3effa7;
 }
 
 .navbar-toggle {
   background-color:  transparent;
   border: 2px solid #fff;
+  margin-right: 20px;
 }
 
 span.icon-bar {
@@ -52,58 +77,115 @@ span.icon-bar {
 .container>.navbar-collapse,
 .container>.navbar-header {
   background-color: rgba(152,152,152,1);
-   opacity: 0.6;
+  opacity: 0.6;
 }
+
 .icon-bar a:hover {
   background-color: #e7f0f3;
 }
+
 /* About Me */
+.aboutMe {
+
+}
+.section {
+  position: relative;
+}
 img.portrait {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .aboutMe {
   height: 300%;
-  background: url(../img/chevron.jpg);
-  background-repeat: round;
-  background-size: cover;
+  width: 100%;
 }
 
 .page-header {
-margin-top: 1px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  border-bottom: 0px solid transparent;
 }
 
 /* Work Section */
+.portfolio {
+  width: 100%;
+}
 .work {
   margin-top: 2.5px;
 }
-
-.portfolio {
-  height: 500%;
-  background-color: #e5f3f7;
-  background: -webkit-linear-gradient(#f7fbfc, #e5f3f7); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#f7fbfc, #e5f3f7); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#f7fbfc, #e5f3f7); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#f7fbfc, #e5f3f7); /* Standard syntax */
+/* Image Styles */
+.kitty1 {
+  height: 263.85px;
+  width: 220.14px;
+  margin-top: 80px;
 }
-.portWork {
-display: block;
-margin-left: auto;
-margin-right: auto;
+.kitty2 {
+  height: 478.8px;
+  width: 548.6px;
+}
+
+.kitty3 {
+  height: 252.83px;
+  width: 200.16px;
+  margin-top: 80px;
+}
+
+.kitty4 {
+  height: 313.66px;
+  width: 365.33px;
+  margin-top: 40px;
+}
+
+.kitty5 {
+  height: 348.8px;
+  width: 404.8px;
+  margin-top: 10px;
+}
+
+.kitty6 {
+  height: 220.6px;
+  width: 272px;
+  margin-top: 80px;
 }
 /*footer styles */
 
 .footer {
-  height: 20%;
-  background: url(../img/chevron.jpg);
-  background-repeat: round;
-  background-size: cover;
-  border-top: 1px solid #eee;
+  height: 30%;
+}
+.free {
+
 }
 
+/* Social Media Icons */
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+  padding-bottom: 10px;
+}
+
+a.social:hover {
+  opacity: 1;
+}
+.kitty {
+  width: 200px;
+  height: 121px;
+}
 /* Contact Form */
 .emailMe a:hover {
   color: #eec273;
@@ -115,14 +197,15 @@ margin-right: auto;
 
 textarea.form-control {
   height: 30%;
-  width: 90%;
+  width: 100%;
 }
+
 label {
-  color: #5f8087;
-  padding-left: 20px;
+  color: #7D26CD;
 }
+
 .form-control {
-  width: 90%;
+  width: 100%;
   background-color: #e5f3f7;
   border-color: #eec273;
   display: block;
@@ -130,8 +213,13 @@ label {
   margin-right: auto;
 }
 
+.form-control:focus {
+  background-color: #fff;
+}
+
 .followMe {
   margin-top: 10px;
+  color: #7D26CD;
 }
 
 .btn {
@@ -141,45 +229,144 @@ label {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  transition: all 0.3s ease 0s;
 }
+.btn:hover {
+  color: #7D26CD;
+  border-color: #7D26CD;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
-  .aboutMe {
-    height: 300px;
-    background: url(../img/chevron.jpg);
-    background-repeat: round;
-    background-size: cover;
+  p {
+  text-align: left;
   }
-  .container a {
-    font-size: 15px;
-    color: #fff;
+
+  .footer ul {
+  text-align: left;
   }
-  img.portrait {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
+
+  #footer {
+  margin-left: 30px;
   }
-  .container {
-    width: 260px;
+
+  .emailMe {
+  text-align: left;
   }
-  .portWork {
-    margin: 100px 100px;
+
+  .followMe {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
   }
-  .footer {
-    height: 400px;
-    background: url(../img/chevron.jpg);
-    background-repeat: round;
-    background-size: cover;
-    border-top: 1px solid #eee;
+
+  .kitty {
+    width: 300px;
+    height: 182px;
   }
-  textarea.form-control {
-    height: 150px;
+
+  .sectionA {
+  width: 60%;
+  margin-left: 0px;
   }
+
+  .sectionF {
+  margin-left: 0px;
+  }
+
+  label {
+  padding-left: 0px;
+  }
+
   .form-control {
-    width: 80%;
-    background-color: #e5f3f7;
-    border-color: #eec273;
+  width: 100%;
+  margin-left: 0px;
   }
+
+  textarea.form-control {
+  height: 30%;
+  width: 100%;
+  }
+
+  .btn {
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .kitty {
+    width: 350px;
+    height: 212px;
+  }
+  .sectionK {
+    margin-top: 45px;
+    margin-left: 0px;
+    width: 320px;
+  }
+  .sectionA {
+    width: 330px;
+    margin-left: 60px;
+  }
+  .sectionF {
+    width: 190px;
+    margin-left: 60px;
+    padding-bottom: 30px;
+  }
+  .followMe {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .footer ul {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+}
+@media (min-width: 1200px) {
+.section .section-header .aboutMe {
+  width: 100%;
+  height: 100%;
+}
+.sectionK {
+  margin-top: 60px;
+  width: 400px;
+}
+.sectionA {
+  width: 400px;
+}
+.sectionF {
+  width: 200px;
+}
+/*.kitty1 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.kitty2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.kitty3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.kitty4 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.kitty5 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.kitty6 {
+  margin-left: 10px;
+  margin-right: 10px;
+}*/
 
 }
