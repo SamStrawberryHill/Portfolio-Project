@@ -1,11 +1,11 @@
-/*Global Styles*/
+/******* Global Styles *******/
 body {
-  background: url('../img/edit2.jpg');
-    background-attachment: scroll;
+  background-attachment: scroll;
 }
+
 h1,
 p {
-  color: #7D26CD;
+  color: #ff6dc5;
 }
 
 p {
@@ -14,30 +14,51 @@ p {
 }
 
 h2 {
-  color:	#3effa7;
+  color:	#ff2fad;
   margin-top: 5px;
 }
 h2 small {
-  color: #f0d6cd;
-}
-.samantha {
-    /*position: absolute;
-    top: 600px;
-    left: 500px;*/
-}
-/* Navigation */
-a {
-  color: #e6bbad;
+  color: #ff6dc5;
 }
 
-a:hover {
-  color: #fff;
+/******* Navigation *******/
+
+.navbar-brand>img {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.moon {
+  width: 35px;
+  height: 35px;
+
+}
+.navbar-brand {
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #ffb482;
+  margin-bottom: 3px;
+
+}
+a.navbar-brand:hover,
+a.navbar-brand:focus{
   text-decoration: none;
+  color: #fff;
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
 }
 
 .container-fluid {
+  background: url('../img/edit2.jpg');
   padding-left: 0px;
   padding-right: 0px;
+  border-top: 2px solid #abddff;
+
 }
 
 .container-fluid .portfolio {
@@ -50,7 +71,6 @@ a:hover {
   color: #ff3e96;
   font-size: 30px;
   padding-bottom: 15px;
-
 }
 
 .navbar-nav li a:hover {
@@ -72,27 +92,20 @@ span.icon-bar {
   background-color: #fff;
 }
 
-.container-fluid>.navbar-collapse,
-.container-fluid>.navbar-header,
-.container>.navbar-collapse,
-.container>.navbar-header {
-  background-color: rgba(152,152,152,1);
-  opacity: 0.6;
-}
-
 .icon-bar a:hover {
   background-color: #e7f0f3;
 }
 
-/* About Me */
-.aboutMe {
-
+/******* About Me *******/
+.section.section-header.aboutMe {
+  background: url('../img/edit2.jpg');
 }
 .section {
   position: relative;
 }
+
 img.portrait {
-  padding-top: 30px;
+  padding-top: 80px;
 }
 
 .aboutMe {
@@ -106,63 +119,83 @@ img.portrait {
   padding-bottom: 0px;
   border-bottom: 0px solid transparent;
 }
-/* Alchemy Symbols */
+/*******  Alchemy Symbols *******/
+.row.alchemySymbol {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .alchemy {
   height: 30px;
   width: 30px;
+  margin-top: 10px;
 }
 
-/* Work Section */
+/*******  Work Section *******/
 .portfolio {
   width: 100%;
 }
-.work {
+
+a.work {
   margin-top: 2.5px;
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
+  text-align: center;
+  }
+a.work:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+  text-decoration: none;
 }
-/* Image Styles */
+
+
+/******* Image Styles *******/
 .kitty1 {
   height: 263.85px;
   width: 220.14px;
-  margin-top: 80px;
+  margin-top: 10px;
 }
+
 .kitty2 {
-  height: 478.8px;
-  width: 548.6px;
+  height: 266px;
+  width: 304.7px;
+  margin-top: 5px;
 }
 
 .kitty3 {
   height: 252.83px;
   width: 200.16px;
-  margin-top: 80px;
+  margin-top: 5px;
 }
 
 .kitty4 {
-  height: 313.66px;
-  width: 365.33px;
-  margin-top: 40px;
+  height: 274px;
+  width: 235.25px;
+  margin-top: 5px;
 }
 
 .kitty5 {
-  height: 404.8px;
-  width: 348.8px;
-  margin-top: 10px;
+  height: 253px;
+  width: 218px;
+  margin-top: 5px;
 }
 
 .kitty6 {
-  height: 272px;
-  width: 220.6px;
-  margin-top: 80px;
+  height: 226.66px;
+  width: 183.83px;
+  margin-top: 5px;
 }
-/*footer styles */
+
+/******* footer styles *******/
 
 .footer {
   height: 30%;
+  background: url('../img/edit2.jpg');
+  border-top: 2px solid #abddff;
 }
-.free {
 
-}
-
-/* Social Media Icons */
+/******* Social Media Icons *******/
 .footer ul {
   list-style-type: none;
   margin: 0;
@@ -188,15 +221,24 @@ a.social:hover {
   opacity: 1;
 }
 .kitty {
-  width: 200px;
-  height: 121px;
+  width: 244.5px;
+  height: 135.33px;
 }
-/* Contact Form */
+
+/******* Contact Form *******/
+
+.emailMe a{
+  color: #ff3e96;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
 .emailMe a:hover {
-  color: #eec273;
+  background-color: transparent;
+  color: #3effa7;
+  text-decoration: none;
 }
 .container {
-  width: 100%;
   padding: 0 15px;
 }
 
@@ -206,7 +248,7 @@ textarea.form-control {
 }
 
 label {
-  color: #7D26CD;
+  color: #ff6dc5;
 }
 
 .form-control {
@@ -222,9 +264,17 @@ label {
   background-color: #fff;
 }
 
-.followMe {
+.followMe a{
   margin-top: 10px;
-  color: #7D26CD;
+  color: #ff3e96;
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+
+.followMe a:hover {
+  background-color: transparent;
+  color: #3effa7;
+  text-decoration: none;
 }
 
 .btn {
@@ -242,14 +292,60 @@ label {
   border-color: #7D26CD;
 }
 
-/* Media Queries */
+/*********************** Media Queries ***********************/
+@media (max-width: 767px){
+  .container-fluid>.navbar-collapse,
+  .container-fluid>.navbar-header,
+  .container>.navbar-collapse,
+  .container>.navbar-header  {
+    background-color: rgba(152,152,152,1);
+    opacity: 0.8;
+  }
+}
+
 @media (min-width: 768px) {
   p {
   text-align: left;
   }
+  .navbar-nav li a {
+    margin-left: 10px;
+  }
   .alchemy {
     height: 50px;
     width: 50px;
+  }
+  .kitty1 {
+    height: 307.83px;
+    width: 256.83px;
+  }
+  .kitty2 {
+    height: 239.4px;
+    width: 274.3px;
+    margin-top: 10px;
+  }
+
+  .kitty3 {
+    height: 252.83px;
+    width: 200.16px;
+    /*margin-top: 80px;*/
+  }
+
+  .kitty4 {
+    height: 268.85px;
+    width: 313.14px;
+    /*margin-top: 40px;*/
+  }
+
+  .kitty5 {
+    height: 337.3px;
+    width: 290.6px;
+    /*margin-top: 10px;*/
+  }
+
+  .kitty6 {
+    height: 272px;
+    width: 220.6px;
+    /*margin-top: 80px;*/
   }
 
   .footer ul {
@@ -271,8 +367,9 @@ label {
   }
 
   .kitty {
-    width: 300px;
-    height: 182px;
+    width: 293.4px;
+    height: 162.4px;
+    text-align: left;
   }
 
   .sectionA {
@@ -305,13 +402,16 @@ label {
 }
 
 @media (min-width: 992px) {
+  .navbar-nav li a {
+    margin-left: 45px;
+  }
   .alchemy {
     height: 60px;
     width: 60px;
   }
   .kitty {
-    width: 350px;
-    height: 212px;
+    width: 366.75px;
+    height: 203px;
   }
   .sectionK {
     margin-top: 45px;
@@ -343,10 +443,49 @@ label {
   width: 100%;
   height: 100%;
 }
+.navbar-nav li a {
+  margin-left: 150px;
+}
+
 .alchemy {
   height: 80px;
   width: 80px;
 }
+.kitty1 {
+  height: 307.83px;
+  width: 256.83px;
+  margin-top: 50px;
+}
+.kitty2 {
+  height: 399px;
+  width: 457.16px;
+  margin-top: 10px;
+}
+
+.kitty3 {
+  height: 303.4px;
+  width: 240.2px;
+  margin-top: 50px;
+}
+
+.kitty4 {
+  height: 365.33px;
+  width: 313.66px;
+  /*margin-top: 40px;*/
+}
+
+.kitty5 {
+  height: 337.3px;
+  width: 290.6px;
+  /*margin-top: 10px;*/
+}
+
+.kitty6 {
+  height: 272px;
+  width: 220.6px;
+  margin-top: 40px;
+}
+
 .sectionK {
   margin-top: 60px;
   width: 400px;
