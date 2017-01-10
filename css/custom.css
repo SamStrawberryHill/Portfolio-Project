@@ -10,12 +10,20 @@ p {
   font-size: 16px;
 }
 
-h2 {
+h2,
+h3 {
   color:	#3effa7;
   margin-top: 5px;
 }
 h2 small {
   color: #ffb482;
+}
+
+h3 {
+  text-align: center;
+}
+h3:hover {
+  color: #ff3e96;
 }
 
 /**************** Navigation *************/
@@ -332,8 +340,8 @@ label {
   transition: all 0.3s ease 0s;
 }
 .btn:hover {
-  color: #7D26CD;
-  border-color: #7D26CD;
+  color: #ff3e96;
+  border-color: #ff3e96;
 }
 
 /******* Social Media Icons *******/
