@@ -293,6 +293,7 @@ label {
 }
 
 /*********************** Media Queries ***********************/
+/***** Collapsed Menu Style *****/
 @media (max-width: 767px){
   .container-fluid>.navbar-collapse,
   .container-fluid>.navbar-header,
@@ -302,7 +303,7 @@ label {
     opacity: 0.8;
   }
 }
-
+/*********************** Small Screens ***********************/
 @media (min-width: 768px) {
   p {
   text-align: left;
@@ -327,25 +328,21 @@ label {
   .kitty3 {
     height: 252.83px;
     width: 200.16px;
-    /*margin-top: 80px;*/
   }
 
   .kitty4 {
     height: 268.85px;
     width: 313.14px;
-    /*margin-top: 40px;*/
   }
 
   .kitty5 {
     height: 337.3px;
     width: 290.6px;
-    /*margin-top: 10px;*/
   }
 
   .kitty6 {
     height: 272px;
     width: 220.6px;
-    /*margin-top: 80px;*/
   }
 
   .footer ul {
@@ -400,7 +397,7 @@ label {
   margin-right: 0px;
   }
 }
-
+/*********************** Medium Screens ***********************/
 @media (min-width: 992px) {
   .navbar-nav li a {
     margin-left: 45px;
@@ -438,6 +435,7 @@ label {
   }
 
 }
+/*********************** Large Screens ***********************/
 @media (min-width: 1200px) {
 .section .section-header .aboutMe {
   width: 100%;
@@ -471,13 +469,11 @@ label {
 .kitty4 {
   height: 365.33px;
   width: 313.66px;
-  /*margin-top: 40px;*/
 }
 
 .kitty5 {
   height: 337.3px;
   width: 290.6px;
-  /*margin-top: 10px;*/
 }
 
 .kitty6 {
