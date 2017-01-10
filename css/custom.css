@@ -1,7 +1,4 @@
 /******* Global Styles *******/
-body {
-  background-attachment: scroll;
-}
 
 h1,
 p {
@@ -18,10 +15,10 @@ h2 {
   margin-top: 5px;
 }
 h2 small {
-  color: #ff6dc5;
+  color: #ffb482;
 }
 
-/******* Navigation *******/
+/**************** Navigation *************/
 
 .navbar-brand>img {
   display: inline-block;
@@ -96,7 +93,7 @@ span.icon-bar {
   background-color: #e7f0f3;
 }
 
-/******* About Me *******/
+/******************** About Me ***************/
 .section.section-header.aboutMe {
   background: url('../img/edit2.jpg');
 }
@@ -118,6 +115,9 @@ img.portrait {
   margin-bottom: 10px;
   padding-bottom: 0px;
   border-bottom: 0px solid transparent;
+  border-radius: 3px;
+  background-color: rgba(109,123,255, 0.7);
+  width: 90%;
 }
 /*******  Alchemy Symbols *******/
 .row.alchemySymbol {
@@ -129,103 +129,103 @@ img.portrait {
   height: 30px;
   width: 30px;
   margin-top: 10px;
+  margin-bottom: 15px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+.alchemy:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
-/*******  Work Section *******/
+
+/***************  Work Section **********************/
 .portfolio {
   width: 100%;
 }
 
 a.work {
-  margin-top: 2.5px;
+  margin-top: 10px;
   font-size: 60px;
   font-family: 'Pacifico', cursive;
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;
   text-align: center;
   }
+
 a.work:hover {
-  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
   text-decoration: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
 }
 
 
-/******* Image Styles *******/
+/**********************  Portfolio Image Styles **********************/
 .kitty1 {
   height: 263.85px;
   width: 220.14px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .kitty2 {
   height: 266px;
   width: 304.7px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .kitty3 {
   height: 252.83px;
   width: 200.16px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .kitty4 {
   height: 274px;
   width: 235.25px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .kitty5 {
   height: 253px;
   width: 218px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .kitty6 {
   height: 226.66px;
   width: 183.83px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
-/******* footer styles *******/
-
+/************** Footer Styles **************/
+.container-fluid {
+  width: 100%;
+}
 .footer {
   height: 30%;
   background: url('../img/edit2.jpg');
   border-top: 2px solid #abddff;
 }
-
-/******* Social Media Icons *******/
-.footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.sectionA,
+.sectionF {
+  background-color: rgba(109,123,255, 0.5);
+  border-radius: 3px;
+  margin-bottom: 15px;
 }
 
-.footer ul li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-a.social {
-  display: inline-block;
-  margin-left: 5px;
-  background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
-  padding-bottom: 10px;
-}
-
-a.social:hover {
-  opacity: 1;
-}
 .kitty {
   width: 244.5px;
   height: 135.33px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
-/******* Contact Form *******/
+/************** Contact Form **************/
 
 .emailMe a{
   color: #ff3e96;
@@ -248,7 +248,7 @@ textarea.form-control {
 }
 
 label {
-  color: #ff6dc5;
+  color: #ffb482;
 }
 
 .form-control {
@@ -292,6 +292,34 @@ label {
   border-color: #7D26CD;
 }
 
+/******* Social Media Icons *******/
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+  padding-bottom: 10px;
+}
+
+a.social:hover {
+  opacity: 1;
+}
+
+
 /*********************** Media Queries ***********************/
 /***** Collapsed Menu Style *****/
 @media (max-width: 767px){
@@ -315,9 +343,14 @@ label {
     height: 50px;
     width: 50px;
   }
+  .page-header {
+    width: 60%;
+  }
+/****** Portfolio Image Styles *******/
   .kitty1 {
-    height: 307.83px;
-    width: 256.83px;
+    height: 230.87px;
+    width: 192.62px;
+    margin-top: 50px;
   }
   .kitty2 {
     height: 239.4px;
@@ -326,25 +359,29 @@ label {
   }
 
   .kitty3 {
-    height: 252.83px;
-    width: 200.16px;
+    height: 216.71px;
+    width: 171.57px;
+    margin-top: 50px;
   }
 
   .kitty4 {
-    height: 268.85px;
-    width: 313.14px;
+    height: 235.25px;
+    width: 274px;
+    margin-top: 30px;
   }
 
   .kitty5 {
-    height: 337.3px;
-    width: 290.6px;
+    height: 289.14px;
+    width: 249.14px;
+    margin-right: 15px;
   }
 
   .kitty6 {
-    height: 272px;
-    width: 220.6px;
+    height: 226.66px;
+    width: 183.83px;
+    margin-top: 40px;
   }
-
+/****** Footer *******/
   .footer ul {
   text-align: left;
   }
@@ -367,6 +404,8 @@ label {
     width: 293.4px;
     height: 162.4px;
     text-align: left;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .sectionA {
@@ -376,6 +415,7 @@ label {
 
   .sectionF {
   margin-left: 0px;
+  width: 60%;
   }
 
   label {
@@ -402,9 +442,50 @@ label {
   .navbar-nav li a {
     margin-left: 45px;
   }
+  .page-header {
+    width: 40%;
+  }
   .alchemy {
     height: 60px;
     width: 60px;
+    margin-top: 10px;
+  }
+/****** Portfolio Image Styles *******/
+  .kitty1 {
+    height: 263.85px;
+    width: 220.14px;
+  }
+  .kitty2 {
+    height: 239.4px;
+    width: 274.3px;
+    margin-top: 10px;
+  }
+
+  .kitty3 {
+    height: 252.83px;
+    width: 200.16px;
+  }
+
+  .kitty4 {
+    height: 235.25px;
+    width: 274px;
+    margin-top: 30px;
+  }
+
+  .kitty5 {
+    height: 289.14px;
+    width: 249.14px;
+    margin-right: 15px;
+  }
+
+  .kitty6 {
+    height: 226.66px;
+    width: 183.83px;
+    margin-top: 50px;
+  }
+/****** Footer *******/
+  #footer {
+    margin-left: 0px;
   }
   .kitty {
     width: 366.75px;
@@ -418,11 +499,13 @@ label {
   .sectionA {
     width: 330px;
     margin-left: 60px;
+    margin-top: 15px;
   }
   .sectionF {
     width: 190px;
     margin-left: 60px;
     padding-bottom: 30px;
+    margin-top: 15px;
   }
   .followMe {
     text-align: center;
@@ -444,11 +527,17 @@ label {
 .navbar-nav li a {
   margin-left: 150px;
 }
+.page-header {
+  width: 33%;
+}
 
 .alchemy {
   height: 80px;
   width: 80px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
+/****** Portfolio Image Styles *******/
 .kitty1 {
   height: 307.83px;
   width: 256.83px;
@@ -474,22 +563,25 @@ label {
 .kitty5 {
   height: 337.3px;
   width: 290.6px;
+  margin-top: 30px;
 }
 
 .kitty6 {
   height: 272px;
   width: 220.6px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
-
+/****** Footer *******/
 .sectionK {
   margin-top: 60px;
   width: 400px;
 }
 .sectionA {
+  margin-top: 15px;
   width: 400px;
 }
 .sectionF {
+  margin-top: 15px;
   width: 200px;
 }
 
