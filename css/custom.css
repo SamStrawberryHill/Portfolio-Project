@@ -375,6 +375,26 @@ a.social:hover {
 .modal-content {
   background-color: rgba(109,123,255, 0.7);
 }
+.modal-body {
+  height: 900;
+}
+
+.screenShot {
+  height: 356.4px;
+  width: 321.2px;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+.projectInfo {
+  width: 321.2px;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projectInfo p {
+  text-align: center;
+}
 
 /*********************** Media Queries ***********************/
 /***** Collapsed Menu Style *****/
@@ -386,7 +406,7 @@ a.social:hover {
   background-color: rgba(109,123,255, 0.7);
   opacity: 0.8;
   }
-
+}
 /*********************** Small Screens ***********************/
 @media (min-width: 768px) {
   p {
@@ -493,10 +513,10 @@ a.social:hover {
   margin-left: 0px;
   margin-right: 0px;
   }
-}
 /****************** Modal Window *****************/
-.modal-dialog {
-  width: 800px;
+  .modal-dialog {
+    width: 900px;
+  }
 }
 /*********************** Medium Screens ***********************/
 @media (min-width: 992px) {
