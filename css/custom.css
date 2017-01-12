@@ -26,6 +26,9 @@ h3 {
 h3:hover {
   color: #ff3e96;
 }
+h4 {
+  font-size: 30px;
+}
 
 /**************** Navigation *************/
 
@@ -61,11 +64,8 @@ a.navbar-brand:focus{
 }
 
 .container-fluid {
-  background: url('../img/edit2.jpg');
   padding-left: 0px;
   padding-right: 0px;
-  border-top: 2px solid #abddff;
-
 }
 
 .container-fluid .portfolio {
@@ -153,6 +153,8 @@ img.portrait {
 /***************  Work Section **********************/
 .portfolio {
   width: 100%;
+  background: url('../img/edit2.jpg');
+  border-top: 2px solid #abddff;
 }
 
 a.work {
@@ -175,7 +177,14 @@ a.work:hover {
 }
 
 /**********************  Portfolio Image Styles **********************/
-
+.projectName{
+  font-size: 20px;
+  background-color: rgba(109,123,255, 0.5);
+  border-radius: 3px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .kitty1 {
   height: 263.85px;
   width: 220.14px;
@@ -372,28 +381,41 @@ a.social:hover {
   opacity: 1;
 }
 /****************** Modal Window *****************/
-.modal-content {
-  background-color: rgba(109,123,255, 0.7);
+.modal-header {
+  border-bottom: 1px solid #ff3e96;
 }
-.modal-body {
-  height: 900;
+.modal-content {
+  background-color: rgba(109,123,255, 0.9);
+  overflow: hidden;
 }
 
-.screenShot {
-  height: 356.4px;
-  width: 321.2px;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
+img.screenShot{
+  height: 368.42px;
+  width: 349px;
 }
-.projectInfo {
-  width: 321.2px;
-  float: right;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .projectInfo p {
   text-align: center;
+}
+.projectInfo a {
+  text-align: center;
+  color: #3effa7;
+  font-size: 20px;
+  margin-left: 60px;
+}
+
+.projectInfo a:hover {
+  background-color: transparent;
+  color: #ff3e96;
+  text-decoration: none;
+}
+
+.modal-footer {
+  border-top: 1px solid #ff3e96;
+}
+.mButton {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*********************** Media Queries ***********************/
@@ -514,8 +536,19 @@ a.social:hover {
   margin-right: 0px;
   }
 /****************** Modal Window *****************/
-  .modal-dialog {
-    width: 900px;
+  .mButton {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.screenShot{
+    height: 312.43px;
+    width: 269px;
+  }
+  .projectInfo a {
+    margin-left: 0px;
+  }
+  .projectInfo p {
+    text-align: left;
   }
 }
 /*********************** Medium Screens ***********************/
@@ -597,7 +630,19 @@ a.social:hover {
     text-align: center;
     padding-top: 10px;
   }
+/****************** Modal Window *****************/
+  .modal-dialog {
+    width: 600px;
+  }
 
+  img.screenShot{
+    height: 308.42px;
+    width: 269px;
+  }
+
+  .projectInfo a {
+    margin-left: 0px;
+  }
 }
 /*********************** Large Screens ***********************/
 @media (min-width: 1200px) {
@@ -667,4 +712,12 @@ a.social:hover {
     margin-top: 15px;
     width: 290px;
   }
+  /****** Modal Window *******/
+  .modal-dialog {
+    width: 900px;
+  }
+  .projectInfo a {
+    margin-left: 60px;
+  }
+
 }
