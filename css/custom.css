@@ -355,31 +355,66 @@ label {
 }
 
 /******* Social Media Icons *******/
-
-.footer ul {
-  list-style-type: none;
+.soc {
+  display: block;
+  font-size: 0;
+  list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
-
-.footer ul li {
+.soc li {
   display: inline-block;
-  list-style-type: none;
+  margin: 12px;
+  margin: 1.2rem;
+}
+.soc a, .soc svg {
+  display: block;
+}
+.soc a {
+  position: relative;
+  height: 6rem;
+  width: 6rem;
+}
+.soc svg {
+  height: 100%;
+  width: 100%;
 }
 
-a.social {
-  display: inline-block;
-  margin-left: 5px;
-  background-size: 30px 30px;
-  opacity: .4;
-  transition: all .5s;
-  padding-bottom: 10px;
+.icon-13:hover,
+.icon-26:hover,
+.icon-17:hover {
+  border-radius: 100%;
+  color: #0e1a25;
+  fill: #0e1a25;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+}
+.icon-13 {
+  color: #26d991;
+  fill: #26d991;
+}
+.icon-13:hover {
+  background: #26d991;
+}
+.icon-17 {
+  color: #eec273;
+  fill: #eec273;
+}
+.icon-17:hover {
+  background: #eec273;
+}
+.icon-26 {
+  color: #d926b5;
+  fill: #d926b5;
+}
+.icon-26:hover {
+  background: #d926b5;
 }
 
-a.social:hover {
-  opacity: 1;
-}
 /****************** Modal Window *****************/
 .modal-header {
   border-bottom: 1px solid #ff3e96;
