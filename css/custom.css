@@ -391,7 +391,7 @@ a.social:hover {
 
 img.screenShot{
   height: 368.42px;
-  width: 349px;
+  width: 268px;
 }
 
 .projectInfo p {
@@ -401,7 +401,7 @@ img.screenShot{
   text-align: center;
   color: #3effa7;
   font-size: 20px;
-  margin-left: 60px;
+  margin-left: 15px;
 }
 
 .projectInfo a:hover {
