@@ -86,6 +86,10 @@ a.navbar-brand:focus{
   color: #ff3e96;
 }
 
+.navbar-nav li a:focus {
+  background-color: transparent;
+}
+
 .navbar-toggle {
   background-color:  transparent;
   border: 2px solid #fff;
@@ -102,6 +106,38 @@ span.icon-bar {
 
 .icon-bar a:hover {
   background-color: #e7f0f3;
+}
+/*** Turn the hamburger to an x ***/
+.navbar-toggle {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
 }
 
 /******************** About Me ***************/
@@ -359,22 +395,29 @@ label {
   display: block;
   font-size: 0;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
+
 .soc li {
   display: inline-block;
   margin: 12px;
   margin: 1.2rem;
 }
+ul.soc {
+  margin-left: 25px;
+  margin-right: auto;
+}
+
 .soc a, .soc svg {
   display: block;
 }
+
 .soc a {
   position: relative;
   height: 6rem;
   width: 6rem;
 }
+
 .soc svg {
   height: 100%;
   width: 100%;
@@ -384,8 +427,8 @@ label {
 .icon-26:hover,
 .icon-17:hover {
   border-radius: 100%;
-  color: #0e1a25;
-  fill: #0e1a25;
+  color: rgba(109,123,255, 0.5);
+  fill: rgba(109,123,255, 0.5);
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   -webkit-transition: background-color 0.5s, -webkit-transform 0.5s ease-out;
@@ -393,24 +436,30 @@ label {
   transition: background-color 0.5s, transform 0.5s ease-out;
   transition: background-color 0.5s, transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
 }
+
 .icon-13 {
   color: #26d991;
   fill: #26d991;
 }
+
 .icon-13:hover {
   background: #26d991;
 }
+
 .icon-17 {
   color: #eec273;
   fill: #eec273;
 }
+
 .icon-17:hover {
   background: #eec273;
 }
+
 .icon-26 {
   color: #d926b5;
   fill: #d926b5;
 }
+
 .icon-26:hover {
   background: #d926b5;
 }
@@ -569,6 +618,12 @@ img.screenShot{
   .btn {
   margin-left: 0px;
   margin-right: 0px;
+  }
+  /** Social Media Icons **/
+  ul.soc {
+    margin-left: -20px;
+    margin-right: auto;
+    text-align: left;
   }
 /****************** Modal Window *****************/
   .mButton {
@@ -746,6 +801,19 @@ img.screenShot{
   .sectionF {
     margin-top: 15px;
     width: 290px;
+  }
+  /*** Social Media Icons ***/
+  .soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .soc li {
+    display: inline-block;
+    margin: 12px;
+    margin: 1.2rem;
   }
   /****** Modal Window *******/
   .modal-dialog {
