@@ -29,6 +29,9 @@ h3:hover {
 h4 {
   font-size: 30px;
 }
+a:hover {
+  text-decoration: none;
+}
 
 /**************** Navigation *************/
 
@@ -213,7 +216,7 @@ a.work:hover {
 }
 
 /**********************  Portfolio Image Styles **********************/
-.projectName{
+.projectName {
   font-size: 20px;
   background-color: rgba(109,123,255, 0.5);
   border-radius: 3px;
@@ -221,6 +224,7 @@ a.work:hover {
   margin-left: auto;
   margin-right: auto;
 }
+
 .kitty1 {
   height: 263.85px;
   width: 220.14px;
