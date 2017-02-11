@@ -32,6 +32,13 @@ h4 {
 a:hover {
   text-decoration: none;
 }
+.samantha {
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 10px;
+}
+.samantha:hover {
+  color: #ff3e96;
+}
 
 /**************** Navigation *************/
 
@@ -87,6 +94,8 @@ a.navbar-brand:focus{
 .navbar-nav li a:hover {
   background-color: transparent;
   color: #ff3e96;
+  cursor: hand;
+  cursor: pointer;
 }
 
 .navbar-nav li a:focus {
@@ -169,6 +178,16 @@ img.portrait {
   background-color: rgba(109,123,255, 0.7);
   width: 90%;
 }
+
+.page-header:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
+  text-decoration: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+}
 /*******  Alchemy Symbols *******/
 .row.alchemySymbol {
   margin-left: 0px;
@@ -223,6 +242,18 @@ a.work:hover {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.projectName:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
+  text-decoration: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+  cursor: hand;
+  cursor: pointer;
 }
 
 .kitty1 {
@@ -304,6 +335,17 @@ a.work:hover {
   background-color: rgba(109,123,255, 0.5);
   border-radius: 3px;
   margin-bottom: 15px;
+}
+
+.sectionA:hover,
+.sectionF:hover {
+  box-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #3effa7 , 0 0 70px #3effa7 , 0 0 80px #3effa7 , 0 0 100px #3effa7 ;
+  text-decoration: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
 }
 
 .kitty {
