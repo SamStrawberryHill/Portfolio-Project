@@ -231,9 +231,9 @@ a.work:hover {
   margin-top: 15px;
 }
 .kitty1:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 .kitty2 {
   height: 266px;
@@ -252,9 +252,9 @@ a.work:hover {
   margin-top: 10px;
 }
 .kitty3:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .kitty4 {
@@ -274,9 +274,9 @@ a.work:hover {
   margin-top: 10px;
 }
 .kitty5:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .kitty6 {
