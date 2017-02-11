@@ -16,6 +16,7 @@ h4 {
   color:	#3effa7;
   margin-top: 5px;
 }
+
 h2 small {
   color: #ffb482;
 }
@@ -23,19 +24,24 @@ h2 small {
 h3 {
   text-align: center;
 }
+
 h3:hover {
   color: #ff3e96;
 }
+
 h4 {
   font-size: 30px;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 .samantha {
   font-family: 'Pacifico', cursive;
   margin-bottom: 10px;
 }
+
 .samantha:hover {
   color: #ff3e96;
 }
@@ -48,19 +54,20 @@ a:hover {
   margin-right: 3px;
   margin-bottom: 5px;
 }
+
 .moon {
   width: 35px;
   height: 35px;
-
 }
+
 .navbar-brand {
   font-size: 30px;
   padding-bottom: 15px;
   color: #ffb482;
   margin-bottom: 3px;
   line-height: 30px;
-
 }
+
 a.navbar-brand:hover,
 a.navbar-brand:focus{
   text-decoration: none;
@@ -119,35 +126,44 @@ span.icon-bar {
 .icon-bar a:hover {
   background-color: #e7f0f3;
 }
+
 /*** Turn the hamburger to an x ***/
 .navbar-toggle {
   border: none;
   background: transparent !important;
 }
+
 .navbar-toggle:hover {
   background: transparent !important;
 }
+
 .navbar-toggle .icon-bar {
   width: 22px;
   transition: all 0.2s;
 }
+
 .navbar-toggle .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
 }
+
 .navbar-toggle .middle-bar {
   opacity: 0;
 }
+
 .navbar-toggle .bottom-bar {
   transform: rotate(-45deg);
   transform-origin: 10% 90%;
 }
+
 .navbar-toggle.collapsed .top-bar {
   transform: rotate(0);
 }
+
 .navbar-toggle.collapsed .middle-bar {
   opacity: 1;
 }
+
 .navbar-toggle.collapsed .bottom-bar {
   transform: rotate(0);
 }
@@ -156,6 +172,7 @@ span.icon-bar {
 .section.section-header.aboutMe {
   background: url('../img/edit2.jpg');
 }
+
 .section {
   position: relative;
 }
@@ -188,6 +205,7 @@ img.portrait {
   transition: 500ms linear 0s;
   outline: 0 none;
 }
+
 /*******  Alchemy Symbols *******/
 .row.alchemySymbol {
   margin-left: 0px;
@@ -202,11 +220,11 @@ img.portrait {
   -webkit-transition: -webkit-transform .8s ease-in-out;
   transition: transform .8s ease-in-out;
 }
+
 .alchemy:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-
 
 /***************  Work Section **********************/
 .portfolio {
@@ -261,20 +279,11 @@ a.work:hover {
   width: 220.14px;
   margin-top: 15px;
 }
-.kitty1:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
+
 .kitty2 {
   height: 266px;
   width: 304.7px;
   margin-top: 10px;
-}
-.kitty2:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
 }
 
 .kitty3 {
@@ -282,21 +291,11 @@ a.work:hover {
   width: 200.16px;
   margin-top: 10px;
 }
-.kitty3:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
 
 .kitty4 {
   height: 274px;
   width: 235.25px;
   margin-top: 10px;
-}
-.kitty4:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
 }
 
 .kitty5 {
@@ -304,17 +303,18 @@ a.work:hover {
   width: 218px;
   margin-top: 10px;
 }
-.kitty5:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
 
 .kitty6 {
   height: 226.66px;
   width: 183.83px;
   margin-top: 10px;
 }
+
+.kitty1:hover,
+.kitty2:hover,
+.kitty3:hover,
+.kitty4:hover,
+.kitty5:hover,
 .kitty6:hover {
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -325,11 +325,13 @@ a.work:hover {
 .container-fluid {
   width: 100%;
 }
+
 .footer {
   height: 30%;
   background: url('../img/edit2.jpg');
   border-top: 2px solid #abddff;
 }
+
 .sectionA,
 .sectionF {
   background-color: rgba(109,123,255, 0.5);
@@ -355,11 +357,13 @@ a.work:hover {
   margin-right: auto;
   margin-top: 15px;
 }
+
 .kitty:hover {
   animation: skew 3s infinite;
   transform: skew(20deg);
   animation-direction: alternate;
 }
+
 @keyframes skew {
   0% {
     transform: skewX(15deg);
@@ -370,7 +374,6 @@ a.work:hover {
 }
 
 /************** Contact Form **************/
-
 .emailMe a{
   color: #3effa7;
   font-size: 30px;
@@ -382,6 +385,7 @@ a.work:hover {
   color: #ff3e96;
   text-decoration: none;
 }
+
 .container {
   padding: 0 15px;
 }
@@ -431,6 +435,7 @@ label {
   margin-bottom: 20px;
   transition: all 0.3s ease 0s;
 }
+
 .btn:hover {
   color: #ff3e96;
   border-color: #ff3e96;
@@ -449,6 +454,7 @@ label {
   margin: 12px;
   margin: 1.2rem;
 }
+
 ul.soc {
   margin-left: 25px;
   margin-right: auto;
@@ -510,11 +516,11 @@ ul.soc {
   background: #d926b5;
 }
 
-
 /****************** Modal Window *****************/
 .modal-header {
   border-bottom: 1px solid #ff3e96;
 }
+
 .modal-content {
   background-color: rgba(109,123,255, 0.9);
   overflow: hidden;
@@ -528,6 +534,7 @@ img.screenShot{
 .projectInfo p {
   text-align: center;
 }
+
 .projectInfo a {
   text-align: center;
   color: #3effa7;
@@ -544,6 +551,7 @@ img.screenShot{
 .modal-footer {
   border-top: 1px solid #ff3e96;
 }
+
 .mButton {
   margin-left: auto;
   margin-right: auto;
@@ -565,13 +573,16 @@ img.screenShot{
   p {
   text-align: left;
   }
+
   .navbar-nav li a {
     margin-left: 10px;
   }
+
   .alchemy {
     height: 40px;
     width: 40px;
   }
+
   .page-header {
     width: 60%;
   }
@@ -582,6 +593,7 @@ img.screenShot{
     width: 192.62px;
     margin-top: 50px;
   }
+
   .kitty2 {
     height: 239.4px;
     width: 274.3px;
@@ -677,13 +689,16 @@ img.screenShot{
     margin-left: auto;
     margin-right: auto;
   }
+
   img.screenShot{
     height: 312.43px;
     width: 269px;
   }
+
   .projectInfo a {
     margin-left: 0px;
   }
+
   .projectInfo p {
     text-align: left;
   }
@@ -693,9 +708,11 @@ img.screenShot{
   .navbar-nav li a {
     margin-left: 45px;
   }
+
   .page-header {
     width: 40%;
   }
+
   .alchemy {
     height: 60px;
     width: 60px;
@@ -706,6 +723,7 @@ img.screenShot{
     height: 263.85px;
     width: 220.14px;
   }
+
   .kitty2 {
     height: 239.4px;
     width: 274.3px;
@@ -738,31 +756,37 @@ img.screenShot{
   #footer {
     margin-left: 0px;
   }
+
   .kitty {
     width: 366.75px;
     height: 203px;
   }
+
   .sectionK {
     margin-top: 45px;
     margin-left: 20px;
     width: 320px;
   }
+
   .sectionA {
     width: 430px;
     margin-left: 60px;
     margin-top: 15px;
   }
+
   .sectionF {
     width: 190px;
     margin-left: 60px;
     padding-bottom: 30px;
     margin-top: 15px;
   }
+
   .followMe {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 0px;
   }
+
   .footer ul {
     text-align: center;
     padding-top: 10px;
@@ -787,9 +811,11 @@ img.screenShot{
     width: 100%;
     height: 100%;
   }
+
   .navbar-nav li a {
     margin-left: 150px;
   }
+
   .page-header {
     width: 33%;
   }
@@ -806,6 +832,7 @@ img.screenShot{
     width: 256.83px;
     margin-top: 50px;
   }
+
   .kitty2 {
     height: 399px;
     width: 457.16px;
@@ -841,10 +868,12 @@ img.screenShot{
     margin-top: 60px;
     width: 400px;
   }
+
   .sectionA {
     margin-top: 15px;
     width: 430px;
   }
+
   .sectionF {
     margin-top: 15px;
     width: 290px;
@@ -857,6 +886,7 @@ img.screenShot{
     margin: 0;
     padding: 0;
   }
+
   .soc li {
     display: inline-block;
     margin: 12px;
@@ -866,6 +896,7 @@ img.screenShot{
   .modal-dialog {
     width: 900px;
   }
+  
   .projectInfo a {
     margin-left: 60px;
   }
